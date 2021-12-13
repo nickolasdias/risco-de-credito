@@ -30,6 +30,28 @@ No geral, os riscos de crédito são classificados entre riscos de primeira clas
 Este projeto estará utilizando o conjunto de dados de um banco alemão que pode ser encontrado nesse [site](https://www.kaggle.com/kabure/german-credit-data-with-risk).
     
     
- <h2> Objetivo do Estudo de Caso </h2>
+ <h2> Objetivo do Case de Estudo </h2>
     
-Criar um modelo de **Machine Learning** capaz de fazer a previsão de risco de crédito de clientes de um banco através da análise de dados.  
+Criar um modelo de **Machine Learning** capaz de fazer a previsão de risco de crédito de clientes de um banco através da análise de dados. 
+
+
+<h2> Etapas do Projeto <h2>
+ 
+ - Descrição dos Dados
+ 
+ - Análise Exploratória de Dados
+ 
+ - Pré-Processamento
+ 
+ - Seleção de Variáveis
+ 
+ - Machine Learning
+ 
+ - Hipertunagem de Parâmetros
+ 
+ - Conjunto de Dados de Teste
+ 
+ - Deploy do Modelo para Produção
+ 
+ 
+
