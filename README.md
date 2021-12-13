@@ -1,1 +1,1 @@
-# risco-de-credito
+# Case de Estudo: Risco de Crédito
