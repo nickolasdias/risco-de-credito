@@ -43,5 +43,12 @@ Este projeto estará utilizando o conjunto de dados de um banco alemão que pode
 #### 2.1.1.1 Descrição dos Dados - Estatística Descritiva
 
 
+**Observações:**
+
+- A média de clientes do banco é de 35 anos.
+- O montante de crédito médio dos clientes é de 3236 euros.
+- A duração média dos clientes no banco é de 21 meses, sendo que 50% dos clientes tem a duração de 18 meses.
+
+
 #### 2.1.1.2 Verificando Outliers
 
