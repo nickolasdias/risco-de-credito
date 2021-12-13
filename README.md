@@ -1,5 +1,7 @@
 # Case de Estudo: Risco de Crédito - Modelo de Machine Learning
 
+# 1.0 Contexto
+
 <h2> O que é o Risco de Crédito ? </h2>
 
 **Risco de Crédito** é a possibilidade de ocorrência de perdas financeiras devido ao não cumprimento das obrigações por parte do tomador. Em outras palavras, é o risco de inadimplência por parte do tomador do crédito. 
@@ -25,33 +27,21 @@ No geral, os riscos de crédito são classificados entre riscos de primeira clas
 
 - Diversificação de investimentos e a checagem do rating de cada organização com potencial para compor a sua carteira.
 
+ <h2> Objetivo do Case de Estudo </h2>
+    
+Criar um modelo de **Machine Learning** capaz de fazer a previsão de risco de crédito de clientes de um banco através da análise de dados. 
+
 <h2> Apresentando os Dados </h2>
     
 Este projeto estará utilizando o conjunto de dados de um banco alemão que pode ser encontrado nesse [site](https://www.kaggle.com/kabure/german-credit-data-with-risk).
     
     
- <h2> Objetivo do Case de Estudo </h2>
-    
-Criar um modelo de **Machine Learning** capaz de fazer a previsão de risco de crédito de clientes de um banco através da análise de dados. 
+# 2.0 Solução
+
+## 2.1 Principais Etapas
+
+#### 2.1.1.1 Descrição dos Dados - Estatística Descritiva
 
 
-<h2> Etapas do Projeto <h2>
- 
- - Descrição dos Dados
- 
- - Análise Exploratória de Dados
- 
- - Pré-Processamento
- 
- - Seleção de Variáveis
- 
- - Machine Learning
- 
- - Hipertunagem de Parâmetros
- 
- - Conjunto de Dados de Teste
- 
- - Deploy do Modelo para Produção
- 
- 
+#### 2.1.1.2 Verificando Outliers
 
