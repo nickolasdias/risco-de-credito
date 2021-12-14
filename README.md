@@ -23,13 +23,13 @@ No geral, os riscos de crédito são classificados entre riscos de primeira clas
 
 <h2> Quais são as principais táticas utilizadas para minimizar o risco de crédito? </h2>
 
- - Estudo dos dados do cliente, assim como da sua situação socioeconômica, é tomada a decisão de conceder ou não o crédito solicitado. Em tese, a análise de crédito deve ser composta por processos muito rigorosos, de modo a proteger a saúde financeira da organização e prevenir prejuízos - mesmo que isso signifique vetar algumas vendas.
+ - Estudo dos dados do cliente, assim como da sua situação socioeconômica para à tomada de decisão de conceder ou não o crédito solicitado. Em tese, a análise de crédito deve ser composta por processos muito rigorosos, de modo a proteger a saúde financeira da organização e prevenir prejuízos - mesmo que isso signifique vetar algumas vendas.
 
 - Diversificação de investimentos e a checagem do rating de cada organização com potencial para compor a sua carteira.
 
  <h2> Objetivo do Case de Estudo </h2>
     
-Criar um modelo de **Machine Learning** capaz de fazer a previsão de risco de crédito de clientes de um banco através da análise de dados. 
+Criar um modelo de **Machine Learning** capaz de fazer a previsão de risco de crédito "bom" ou "ruim" de clientes de um banco através da análise de dados. 
 
 <h2> Apresentando os Dados </h2>
     
