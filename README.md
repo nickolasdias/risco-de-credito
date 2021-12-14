@@ -233,7 +233,7 @@ Portanto, escolhi o modelo **Random Forest Classifier(max_depth=15)** para ser a
 
 Em machine Learning, a hipertunagem de parâmetros é a escolha de um conjunto de hiperparâmetros ótimos para um algoritmo, cujo valores são utilizados para controlar o processo de aprendizagem. Em contraste, os valores de outros parâmetros (tipicamente pesos de nós) são aprendidos.
 
-Portanto, utilizei a técnica de **RandomSearchCV**, pois método aqui descrito é um tipo de pesquisa aleatória local em que cada iteração depende da solução candidata da iteração anterior. Por isso, gastarei menos tempo para obter o resultado.
+Portanto, utilizei a técnica de [**RandomSearchCV**](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html), pois método aqui descrito é um tipo de pesquisa aleatória local em que cada iteração depende da solução candidata da iteração anterior. Por isso, gastarei menos tempo para obter o resultado.
 
 #### 2.1.6.1 Comparando Modelo Base x Modelo Hipertunado no Conjunto de Treino
 
