@@ -150,7 +150,8 @@ Portanto, irei escolher alguns modelos para serem avaliado no conjunto de teste.
 
 #### 2.1.4.1 Balanceando os Dados
 
-Para verificar a melhora do desempenho dos modelos, irei balancear os dados, na qual é usada uma técnica que cria dados sintéticos com a biblioteca **SMOTE**.
+Para verificar a melhora do desempenho dos modelos, irei balancear os dados, na qual é usada uma técnica que cria dados sintéticos com a biblioteca [**SMOTE**](https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/).
+
 
 ![008](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/008.png)
 
@@ -171,3 +172,31 @@ Portanto, escolherei o modelo **Random Forest Classifier(max_depth=15)** para se
 **Modelo Escolhido:**
 
 - Random Forest Classifier(max_depth=15)
+
+### 2.1.5 Hipertunagem de Parâmetros
+
+Em machine Learning, a hipertunagem de parâmetros é a escolha de um conjunto de hiperparâmetros ótimos para um algoritmo, cujo valores são utilizados para controlar o processo de aprendizagem. Em contraste, os valores de outros parâmetros (tipicamente pesos de nós) são aprendidos.
+
+Portanto, utilizei a técnica de **RandomSearchCV**, pois método aqui descrito é um tipo de pesquisa aleatória local em que cada iteração depende da solução candidata da iteração anterior. Por isso, gastarei menos tempo para obter o resultado.
+
+#### 2.1.5.1 Comparando Modelo Base x Modelo Hipertunado no Conjunto de Treino
+
+**Dados Não-Balanceados**
+
+![010](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/010.png)
+
+**Observações:**
+
+- Analisando as métricas **F1-Score** e **Acurácia**,  os modelos **Decision Tree Classifier(max_depth=1)** e **Random Forest Classifier(max_depth=1)** são que tem desempenhos melhores. Porém, irei testar todos esses modelos no conjunto de teste.
+
+**Dados Balanceados**
+
+![011](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/011.png)
+
+**Observações:**
+
+- O modelo base **Random Forest Classifier(max_depth=19)** apresenta um desempenho melhor do que o modelo hipertunado **Random Forest Classifier(max_depth=15)**. Logo, esses modelos treinados com dados balanceados apresentam performance melhor do que os modelos treinados com dados não balanceados. Porém, irei verificar se essas performances continuam boas no conjunto de teste.
+
+### 2.1.6 Conjunto de Teste
+
+#### 2.1.6.1 Performance dos Modelos no Conjunto de Teste
