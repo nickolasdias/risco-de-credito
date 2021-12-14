@@ -214,3 +214,21 @@ Portanto, utilizei a técnica de **RandomSearchCV**, pois método aqui descrito 
 **Dados Não-Balanceados**
 
 ![015](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/015.png)
+
+![016](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/016.png)
+
+![017](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/017.png)
+
+![018](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/018.png)
+
+![019](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/019.png)
+
+**Observações:**
+
+- Analisando o desempenho de todos os modelos, o algoritmo **Random Forest Classifier(max_depth=1)** e **Decision Tree Classifier(max_depth=1)** apresentam a ter as melhores performances, levando em consideração as métricas **Acurácia** (70%), **Precisão** (70%), **Sensibilidade** (100%) e **F1-Score** (82.35%). Logo, escolherei a Random Forest Classifier.
+
+#### 2.1.6.2 Avaliação do Modelo
+
+Considerando as métricas do modelo **Random Forest Classifier(max_depth=1)**, posso dizer que o modelo acerta com precisão 7 a cada 10 clientes, se terá um risco de crédito bom ou ruim. Enquanto que a probabilidade de o cliente ter, de fato, um risco de crédito bom é de 100%, que é sua sensibilidade. Logo, a combinação da precisão com a sensibilidade pela média harmônica é 82.35%, na qual para a quantidade de dados utilizados no conjunto de dados é um desempenho do modelo satisfatório, nesse primeiro momento.
+
+Logo, para melhorar a performance o modelo e equilibrar mais as métricas entre precisão e sensibilidade é necessário a utilização de mais dados para que o mesmo tenha uma aprendizagem melhor. Não foram utilizados mais parâmetros no modelo para não aumentar sua complexidade. 
