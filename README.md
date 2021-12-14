@@ -38,6 +38,8 @@ Este projeto estará utilizando o conjunto de dados de um banco alemão que pode
 - 1000 linhas - caracterizado por cada cliente
 - 11 colunas - sendo 10 que explicam o resultado da variável resposta.
 
+**Observação:** Antes de fazer qualquer análise e modelagem, separei o conjunto de dados entre **treino** e **teste**. 
+
 <h2> Dicionário de Dados </h2>
 
 - **Age:** Idade.
