@@ -209,7 +209,7 @@ Portanto, utilizei a técnica de **RandomSearchCV**, pois método aqui descrito 
 
 **Observações:**
 
-- Analisando as performances dos modelos nos dados de teste, verifico que o desempenho nos dados de testes está abaixo.
+- Analisando as performances dos modelos nos dados de teste, verifico que o desempenho nos dados de testes está abaixo. Portanto, pode estar acontecendo o processo de **Overfiting** no modelo
 
 **Dados Não-Balanceados**
 
