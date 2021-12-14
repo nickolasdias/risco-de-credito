@@ -38,9 +38,21 @@ Este projeto estará utilizando o conjunto de dados de um banco alemão que pode
     
 # 2.0 Solução
 
+Nesta seção abordarei as principais etapas que foram importantes para a construção do modelo de machine learning como: Estatística Descritiva, Análise Explortória de Dados, Seleção de Variáveis, Modelos de Machine Learning, Hipertunagem de Parâmetros, Performance dos Modelos no Conjunto de Teste e a Avaliação do Modelo.
+
 ## 2.1 Principais Etapas
 
 ### 2.1.1 Descrição dos Dados - Estatística Descritiva
+
+É através da estatística descritiva que conseguimos obter um resumo dos dados, pois ajuda a sintetizar os dados de maneira direta, preocupando-se com menos variações e intervalos de confiança. Portanto, nessa etapa, o que farei é entender as características dos dados por meio desta análise para ter uma noção melhor do contexto que estão modelando.
+
+Desta forma, existem duas métricas em que tem-se de manter os olhos: a tendência central e a distribuição dos dados.
+
+- **Tendência Central:** são estatísticas como mediana, média, quartis, valor máximo e valor mínimo.
+
+- **Distribuição dos Dados:** é o comportamento dos dados em torno da média e mediana .
+
+Portanto, realizarei a estatística descritiva das **variáveis numéricas e variáveis categóricas**.
 
 **Variáveis Numéricas**
 
@@ -72,8 +84,6 @@ Este projeto estará utilizando o conjunto de dados de um banco alemão que pode
 
 - Pode-se observar que existem valores de créditos dos clientes acima de 7909 euros, que são considerados outliers.
 
-- Nesse caso, como os outliers são mais presentes para as variáveis serão tratados, no módulo de **Pré-Processamento**.
-
 **Variáveis Categóricas**
 
 ![006](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/006.png)
@@ -89,7 +99,7 @@ Este projeto estará utilizando o conjunto de dados de um banco alemão que pode
 - Cerca de 230 (33%) dos clientes possuem o objetivo de comprar um carro.
 - Cerca de 490 (70%) dos clientes possuem risco de crédito bom.
 
-Analisando alguns resultados acima, a maioria dos clientes possuem risco de crédito bom (70%). E isso acontece, talvez, pelo fato que a maioria dos clientes possuem empregos qualificados (64%) e habitação própria (72%). Logo, verificarei através da **Análise Exploratória de Dados** as variáveis que explicam a **variável resposta**.
+Analisando alguns resultados acima, a maioria dos clientes possuem risco de crédito bom (70%). E isso acontece, pelo fato que a maioria dos clientes possuem empregos qualificados (64%) e habitação própria (72%). Logo, verificarei através da **Análise Exploratória de Dados** as variáveis que explicam a **variável resposta**.
 
 ### 2.1.2 Análise Exploratória de Dados
 
@@ -121,6 +131,10 @@ Verifico que as variáveis `age`, `credit amount` e `duration` têm as correlaç
 
 ### 2.1.3 Seleção de Variáveis
 
+A seleção de variáveis é importante para facilitar a compreensão dos algoritmos de **Machine Learning**. Esse passo verificará quais variáveis do conjunto de dados são colineares, ou seja, variáveis que explicam a mesma informação. Portanto, é preciso remover essas variáveis.
+
+Para fazer a seleção de variáveis utilizarei o algoritmo **Decision Tree Classifier** que calcula quais as variáveis são mais importantes para o modelo. Antes separarei a variável resposta das demais variáveis.
+
 ![012](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/012.png)
 
 **Observação:**
@@ -130,9 +144,14 @@ Verifico que as variáveis `age`, `credit amount` e `duration` têm as correlaç
 
 ### 2.1.4 Machine Learning
 
+Neste módulo, aplicarei os modelos de **Machine Learning** em que a motivação para utilizar estes algoritmos é construir um modelo inteligente capaz de classificar se cada cliente vai ter um **risco de crédito** bom ou ruim. Para isso aplicarei algoritmos de aprendizado de máquina supervisionado como:
+
+
 - Decision Tree
 - KNeighbors Classifier (KNN)
 - Random Forest Classifier
+
+Nesses algoritmos aplicarei diferentes parâmetros para testar diversos resultados.
 
 ![007](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/007.png)
 
@@ -199,6 +218,8 @@ Portanto, utilizei a técnica de **RandomSearchCV**, pois método aqui descrito 
 
 ### 2.1.6 Conjunto de Teste
 
+Com os modelos escolhidos, irei testá-los no conjunto de dados de teste.
+
 #### 2.1.6.1 Performance dos Modelos no Conjunto de Teste
 
 **Dados Balanceados**
@@ -249,3 +270,4 @@ Nesse projeto, foi realizado o deploy do melhor modelo em produção em **Local 
 - https://maisretorno.com/portal/termos/r/risco-de-credito
 - https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
 - https://medium.com/data-hackers/machine-learning-para-avalia%C3%A7%C3%A3o-de-risco-de-cr%C3%A9dito-49578b03b4b8
+- https://pypi.org/project/sweetviz/
