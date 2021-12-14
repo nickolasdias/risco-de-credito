@@ -232,3 +232,14 @@ Portanto, utilizei a técnica de **RandomSearchCV**, pois método aqui descrito 
 Considerando as métricas do modelo **Random Forest Classifier(max_depth=1)**, posso dizer que o modelo acerta com precisão 7 a cada 10 clientes, se terá um risco de crédito bom ou ruim. Enquanto que a probabilidade de o cliente ter, de fato, um risco de crédito bom é de 100%, que é sua sensibilidade. Logo, a combinação da precisão com a sensibilidade pela média harmônica é 82.35%, na qual para a quantidade de dados utilizados no conjunto de dados é um desempenho do modelo satisfatório, nesse primeiro momento.
 
 Logo, para melhorar a performance o modelo e equilibrar mais as métricas entre precisão e sensibilidade é necessário a utilização de mais dados para que o mesmo tenha uma aprendizagem melhor. Não foram utilizados mais parâmetros no modelo para não aumentar sua complexidade. 
+
+# 3.0 Deploy do Modelo para Produção
+
+Nesse projeto, foi realizado o deploy do melhor modelo em produção em **Local Host** e no [**Heroku**](https://id.heroku.com/login) que pode ser encontrado notebook do projeto.
+
+# 4.0 Próximos Passos
+
+- Coletar mais dados para melhorar o modelo
+- Realizar mais seções do CRISP.
+- Experimentar novos modelos de machine learning para obter uma performance melhor.
+
