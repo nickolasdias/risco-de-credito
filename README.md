@@ -243,3 +243,9 @@ Nesse projeto, foi realizado o deploy do melhor modelo em produção em **Local 
 - Realizar mais seções do CRISP.
 - Experimentar novos modelos de machine learning para obter uma performance melhor.
 
+# Referências
+
+- https://www.pwc.com.br/pt/consultoria-negocios/gestao-risco-compliance/risco-de-credito.html
+- https://maisretorno.com/portal/termos/r/risco-de-credito
+- https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
+- https://medium.com/data-hackers/machine-learning-para-avalia%C3%A7%C3%A3o-de-risco-de-cr%C3%A9dito-49578b03b4b8
