@@ -255,8 +255,6 @@ Portanto, utilizei a técnica de [**RandomSearchCV**](https://scikit-learn.org/s
 
 ### 2.1.7 Conjunto de Teste
 
-Com os modelos escolhidos, testei os mesmo no conjunto de dados de teste.
-
 #### 2.1.7.1 Performance dos Modelos no Conjunto de Teste
 
 **Dados Balanceados**
