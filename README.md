@@ -33,7 +33,7 @@ Criar um modelo de **Machine Learning** capaz de fazer a previsão de risco de c
 
 <h2> Apresentando os Dados </h2>
     
-Este projeto estará utilizou o conjunto de dados de um banco alemão que pode ser encontrado nesse [site](https://www.kaggle.com/kabure/german-credit-data-with-risk). Neste conjunto de dados há:
+Este projeto utilizou o conjunto de dados de um banco alemão que pode ser encontrado nesse [site](https://www.kaggle.com/kabure/german-credit-data-with-risk). Neste conjunto de dados há:
 
 - 1000 linhas - caracterizado por cada cliente.
 - 11 colunas - sendo 10 que explicam o resultado da variável resposta.
