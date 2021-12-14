@@ -200,3 +200,17 @@ Portanto, utilizei a técnica de **RandomSearchCV**, pois método aqui descrito 
 ### 2.1.6 Conjunto de Teste
 
 #### 2.1.6.1 Performance dos Modelos no Conjunto de Teste
+
+**Dados Balanceados**
+
+![013](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/013.png)
+
+![014](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/014.png)
+
+**Observações:**
+
+- Analisando as performances dos modelos nos dados de teste, verifico que o desempenho nos dados de testes está abaixo.
+
+**Dados Não-Balanceados**
+
+![015](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/015.png)
