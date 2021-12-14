@@ -40,8 +40,11 @@ Este projeto estará utilizando o conjunto de dados de um banco alemão que pode
 
 ## 2.1 Principais Etapas
 
-#### 2.1.1.1 Descrição dos Dados - Estatística Descritiva
+### 2.1.1 Descrição dos Dados - Estatística Descritiva
 
+**Variáveis Numéricas**
+
+![001](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/001.png)
 
 **Observações:**
 
@@ -50,5 +53,77 @@ Este projeto estará utilizando o conjunto de dados de um banco alemão que pode
 - A duração média dos clientes no banco é de 21 meses, sendo que 50% dos clientes tem a duração de 18 meses.
 
 
-#### 2.1.1.2 Verificando Outliers
+##### 2.1.1.1 Verificando Outliers
+
+![002](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/002.png)
+
+![003](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/003.png)
+
+**Observações:**
+
+- Pode-se verificar que a variável `age` tem outliers acima de 62 anos.
+- Talvez não se necessário tratá-los pelo fato da distribuição ser assimétrica e não ter tantos dados fora da curva.
+
+![004](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/004.png)
+
+![005](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/005.png)
+
+**Observações:**
+
+- Pode-se observar que existem valores de créditos dos clientes acima de 7909 euros, que são considerados outliers.
+
+- Nesse caso, como os outliers são mais presentes para as variáveis serão tratados, no módulo de **Pré-Processamento**.
+
+**Variáveis Categóricas**
+
+![006](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/006.png)
+
+**Observações:**
+
+- Cerca de 486 (69%) dos clientes do banco são do gêneno masculino.
+- Cerca de 448 (64%) dos clientes do banco têm empregos qualificados.
+- Cerca de 504 (72%) dos clientes possuem habitação própria.
+- Cerca de 428 (74%) dos clientes possuem uma conta poupança do tipo pequena.
+- Cerca de 201 (47%) dos clientes possuem uma conta corrente do tipo pequena. 
+- A maioria dos clientes(17.7%) duram 24 meses no banco.
+- Cerca de 230 (33%) dos clientes possuem o objetivo de comprar um carro.
+- Cerca de 490 (70%) dos clientes possuem risco de crédito bom.
+
+Analisando alguns resultados acima, a maioria dos clientes possuem risco de crédito bom (70%). E isso acontece, talvez, pelo fato que a maioria dos clientes possuem empregos qualificados (64%) e habitação própria (72%). Logo, verificarei através da **Análise Exploratória de Dados** as variáveis que explicam a **variável resposta**.
+
+### 2.1.2 Análise Exploratória de Dados
+
+Em resumo, a importância da **Análise Exploratória de Dados** é compreender e medir forças de como as variáveis impactam no fenômeno que se está modelando. Dessa forma, os objetivos da AED são:
+
+- Ganhar experiência de negócio.
+
+- Entender quais variáveis são importantes para o negócio.
+
+Para realizar a Análise Exploratória de Dados, utilizei a biblioteca **Sweetviz** que fornece uma rápida e eficiente análise dos dados. Logo, os gráficos encontram-se no [projeto](https://github.com/nickolasdias/risco-de-credito/blob/main/notebook/risco_de_credito.ipynb). Portanto, só considerarei para este **readme**, as observações feitas.
+
+**Observações Relevantes:**
+
+- Clientes do gênero masculino recebem um maior risco de crédito bom do que clientes do gênero feminino.
+- Clientes que tem empregos qualificados recebem mais risco de crédito bom do que clientes que tem apenas um emprego que não é qualificado e também empregos que são altamente qualificados.
+- Clientes que tem casa própria recebem mais risco de crédito bom do que clientes que tem casas alugadas ou com o termo 'free'.
+- Clientes com conta poupança do tipo rica recebem um maior risco de crédito bom do que clientes com conta poupança muito rica, moderada ou pequena. 
+- Clientes com conta corrente do tipo rica recebem um maior risco de crédito bom do que clientes com conta corrente do tipo moderada ou pequena.
+- Clientes com crédito de 0 até 5000 euros rebecem um maior risco de crédito bom do que clientes com crédito de 5000 a 10000 euros.
+- Clientes com até 25 meses de banco recebem um maior risco de crédito bom do que clientes com mais de 25 meses de banco. Isto é, quanto mais novo é o cliente, mais ele recebe um risco de crédito bom.
+- Clientes que tem o objetivo de comprar radio/TV recebem um maior risco de crédito bom do que clientes que tem o objetivo de comprar um carro, mobiliaria/equipamentos e etc.
+
+**Associações Relevantes com a Variável Target:**
+- `age` e `risk`: 0.10
+- `credit amount`e `risk`: 0.16
+- `duration` e `risk`: 0.22
+
+Verifico que as variáveis `age`, `credit amount` e `duration` têm as correlações mais significativas com a variável resposta. Logo, são variáveis que  têm um peso mais significativo para determinar o risco de crédito do cliente. Portanto, farão parte da construção do modelo.
+
+### 2.1.3 Seleção de Variáveis
+
+**Observação:**
+
+- As variáveis que o algoritmo **Decision Classifier** selecionou como sendo as mais importantes são `credit amount` e `age`. Temos features que não tem tanta importância, mas irei selecionar todas as variáveis para compor o modelo.
+
+### 2.1.4 Machine Learning
 
