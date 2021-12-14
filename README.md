@@ -121,9 +121,53 @@ Verifico que as variáveis `age`, `credit amount` e `duration` têm as correlaç
 
 ### 2.1.3 Seleção de Variáveis
 
+![012](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/012.png)
+
 **Observação:**
 
-- As variáveis que o algoritmo **Decision Classifier** selecionou como sendo as mais importantes são `credit amount` e `age`. Temos features que não tem tanta importância, mas irei selecionar todas as variáveis para compor o modelo.
+- As variáveis que o algoritmo **Decision Classifier** selecionou como sendo as mais importantes são `credit amount` e `age`. 
+- Temos features que não tem tanta importância, mas irei selecionar todas as variáveis para compor o modelo.
 
 ### 2.1.4 Machine Learning
 
+- Decision Tree
+- KNeighbors Classifier (KNN)
+- Random Forest Classifier
+
+![007](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/007.png)
+
+**Observações:**
+
+- Analisando os resultados e pensando no contexto de negócio, o modelo preferível é que tenha um bom **F1-Score**, pois o que me interessa é ter o resultado dessa métrica mais significativa, nas quais a **Precisão** e a **Sensibilidade** sejam aumentadas e equilibradas pela média harmonica.
+
+Portanto, irei escolher alguns modelos para serem avaliado no conjunto de teste.
+
+**Modelos Escolhidos:**
+
+- Decision Tree Classifier(max_depth=3)
+- Random Forest Classifier(max_depth=7)
+- Random Forest Classifier(max_depth=10)
+
+#### 2.1.4.1 Balanceando os Dados
+
+Para verificar a melhora do desempenho dos modelos, irei balancear os dados, na qual é usada uma técnica que cria dados sintéticos com a biblioteca **SMOTE**.
+
+![008](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/008.png)
+
+**Observação:**
+
+- As classes da variável target está balanceada com as classes tendo a mesma frequência.
+
+#### 2.1.4.2 Machine Learning Dados Balanceados
+
+![009](https://github.com/nickolasdias/risco-de-credito/blob/main/imagens/009.png)
+
+**Observação:**
+
+- Os dados balanceados apresentam uma melhora significativa nos resultados dos modelos. Logo, o modelo **Random Forest Classifier(max_depth=15)** apresenta uma **Acurácia**, **Precisão**, **Sensibilidade** e **F1-Score** melhor que os demais modelos.
+
+Portanto, escolherei o modelo **Random Forest Classifier(max_depth=15)** para ser avaliado nos dados de teste.
+
+**Modelo Escolhido:**
+
+- Random Forest Classifier(max_depth=15)
