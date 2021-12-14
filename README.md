@@ -33,7 +33,32 @@ Criar um modelo de **Machine Learning** capaz de fazer a previsão de risco de c
 
 <h2> Apresentando os Dados </h2>
     
-Este projeto estará utilizando o conjunto de dados de um banco alemão que pode ser encontrado nesse [site](https://www.kaggle.com/kabure/german-credit-data-with-risk).
+Este projeto estará utilizando o conjunto de dados de um banco alemão que pode ser encontrado nesse [site](https://www.kaggle.com/kabure/german-credit-data-with-risk). Neste conjunto de dados há:
+
+- 1000 linhas - caracterizado por cada cliente
+- 11 colunas - sendo 10 que explicam o resultado da variável resposta.
+
+<h2> Dicionário de Dados </h2>
+
+- **Age:** Idade.
+
+- **Sex:** Gênero.
+
+- **Job:** Emprego - 0 - não qualificados e não residentes, 1 - não qualificados e residentes, 2 - qualificados, 3 - altamente qualificados.
+
+- **Housing:** (text: own, rent, or free) - (própria, alugado ou gratuito).
+
+- **Saving Account:** Conta poupança (text - little, moderate, quite rich, rich).
+
+- **Checking Account:** Conta corrente.
+
+- **Credit Amount:** Montante de Crédito.
+
+- **Duration:** Duração de tempo, em meses, dos clientes.
+
+- **Purpose:** Objetivo do Crédito (text: car, furniture/equipment, radio/TV, domestic appliances, repairs, education, business, vacation/others).
+
+- **Risk:** Risco de Crédito se é bom ou ruim.
     
     
 # 2.0 Solução
